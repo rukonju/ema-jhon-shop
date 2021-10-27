@@ -8,7 +8,7 @@ const useCart = () => {
         const savedCart = getStoredCart();
         const keys = Object.keys(savedCart);
 
-        fetch('http://localhost:4000/products/byKeys',{
+        fetch('https://pure-badlands-63918.herokuapp.com/products/byKeys',{
             method: "POST",
             headers: {
                 "content-type": "application/json"

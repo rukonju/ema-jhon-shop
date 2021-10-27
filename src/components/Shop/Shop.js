@@ -16,7 +16,7 @@ const Shop = () => {
     const [displayProducts, setDisplayProducts] = useState([]);
 
     useEffect(() => {
-        fetch(`http://localhost:4000/products?page=${page}&&size=${size}`)
+        fetch(`https://pure-badlands-63918.herokuapp.com/products?page=${page}&&size=${size}`)
             .then(res => res.json())
             .then(data => {
                 console.log(data.products)

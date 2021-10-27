@@ -11,7 +11,7 @@ const Shipping = () => {
         const savedCart = getStoredCart();
         data.order=savedCart;
 
-        fetch('http://localhost:4000/orders',{
+        fetch('https://pure-badlands-63918.herokuapp.com/orders',{
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
